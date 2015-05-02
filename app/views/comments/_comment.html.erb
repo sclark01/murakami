@@ -1,15 +1,16 @@
-<p>
-  <strong>Commenter:</strong>
+  <strong>Event:</strong>
   <%= comment.name %>
 </p>
  
 <p>
-  <strong>Comment:</strong>
+  <strong>Event Description:</strong>
   <%= comment.desc %>
 </p>
-
 <p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
+	Occurs on page <%= comment.pageNum %>
+</p>
+<p>
+	<%= link_to 'Enter Discussion', new_article_comment_discussion_path(@article, comment) %>
+	<%= puts @article %>
+	<%= puts comment %>
 </p>

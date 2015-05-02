@@ -1,6 +1,8 @@
 Murakami::Application.routes.draw do
   resources :articles do
-    resources :comments
+    resources :comments do
+      resources :discussions
+    end
   end
   root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.

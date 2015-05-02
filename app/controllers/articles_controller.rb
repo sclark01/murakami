@@ -31,6 +31,8 @@ class ArticlesController < ApplicationController
 	end
 
 	def show
+		puts params[:page]
+		print "ABOVE"
 		@article = Article.find(params[:id])
 	end
 
