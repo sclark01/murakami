@@ -31,9 +31,15 @@ class ArticlesController < ApplicationController
 	end
 
 	def show
-		puts params[:page]
-		print "ABOVE"
+		@userPage = params[:page].to_i
 		@article = Article.find(params[:id])
+		@commentsToShow = []
+		for comment in @article.comments 
+			if comment.pageNum != nil and comment.pageNum <= @userPage
+				@commentsToShow.push(comment)
+			end
+		end
+		@commentsToShow = @commentsToShow.sort_by {|c| -c[:pageNum]}
 	end
 
 	def destroy

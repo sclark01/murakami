@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 		@article = Article.find(params[:article_id])
 		@comment = @article.comments
 		                   .create(comment_params)
-		redirect_to article_path(@article)
+		redirect_to article_path(@article, :page => @comment.pageNum)
 	end
 
 	def destroy 
