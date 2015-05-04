@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
 
 	def index
-		@articles = Article.all
+		@articles = Article.all.sort_by!{|m| m.title.downcase}
 	end
 
 	def new

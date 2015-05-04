@@ -1,7 +1,9 @@
 Murakami::Application.routes.draw do
   resources :articles do
     resources :comments do
-      resources :discussions
+      resources :discussions do
+        resources :replies
+      end
     end
   end
   root 'welcome#index'
