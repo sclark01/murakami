@@ -1,3 +1,19 @@
-<h3>Topic: <%=discussion.topic%></h1>
-<h5>User: <%=discussion.userName%></h5> 
-<%= link_to 'Enter Discussion', article_comment_discussion_path(@article, @comment, discussion) %>
+<div class="row mt mb">
+      <div class="toggleview">  
+        <div class="large-12 forum-topic">
+          <div class="large-1 column lpad">
+            <span class="center">2523</span>
+          </div>
+          <div class="large-2 small-4 column pad">
+            <span>
+            	<div id="topic">
+                <%= link_to discussion.topic, article_comment_discussion_path(@article, @comment, discussion) %>
+              </div>
+            </span>
+            <span><div id="DiscDesc">Opened by <%= discussion.userName %> on <%=discussion.created_at.in_time_zone('Eastern Time (US & Canada)').to_time.strftime('%b %d %C%y at %l:%M %p') %></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+

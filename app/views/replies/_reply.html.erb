@@ -1,0 +1,20 @@
+
+<div class="row mt mb">
+      <div class="toggleview">  
+        <div class="large-12 forum-topic rounded">
+          <div class="large-1 column lpad">
+            <span class="center">2523</span>
+          </div>
+          <div class="large-2 small-4 column pad">
+            <span>
+            	<div id="desc">
+                	<%= reply.body %>
+              </div>
+              <div id="user">
+          		<span>posted by <%= reply.userName %> on <%=reply.created_at.in_time_zone('Eastern Time (US & Canada)').to_time.strftime('%b %d %C%y at %l:%M %p') %> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+

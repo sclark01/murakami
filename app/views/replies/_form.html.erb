@@ -1,14 +1,28 @@
-<h2>Reply to this topic:</h2>
-<%= form_for([@article, @comment, @discussion, @discussion.replies.build]) do |f| %>
-  <p>
-    <%= f.label :Reply %><br>
-    <%= f.text_area :body %>
-  </p>
-    <p>
-    <%= f.label :User %><br>
-    <%= f.text_field :userName %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<div class="row mt mb">
+      <div class="toggleview">  
+        <div class="large-12 forum-topic">
+          <div class="large-1 column lpad">
+            <span class="center">2523</span>
+          </div>
+          <div class="large-2 small-4 column pad">
+            <span>
+              <div id="topic">
+                <%= form_for([@article, @comment, @discussion, @discussion.replies.build]) do |f| %>
+                <p>
+                  <%= f.label :Reply %><br>
+                  <%= f.text_area :body %>
+                </p>
+                  <p>
+                  <%= f.label :User %><br>
+                  <%= f.text_field :userName %>
+                </p>
+                <p>
+                  <%= f.submit %>
+                </p>
+              <% end %>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
