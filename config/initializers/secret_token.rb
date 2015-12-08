@@ -9,4 +9,8 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Murakami::Application.config.secret_key_base = 'd82536dad32330530b9432b2eeb9e147ae0a968f83b09bfd42e091eae1b8cedf254ed89d1ed14769c6ba43061089056d01da30136146cd0ccf3216ee4537f259'
+Murakami::Application.config.secret_token = if Rails.env.development? or Rails.env.test?
+  ('x' * 30)
+else
+  ENV['SECRET_TOKEN']
+end
