@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  userName: MyString
+  userName: reply1
   userId: 1
-  body: MyText
+  body: sometext
   discussion_id: 
 
 two:
-  userName: MyString
+  userName: reply2
   userId: 1
-  body: MyText
+  body: sometest
   discussion_id: 

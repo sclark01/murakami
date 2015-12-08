@@ -22,6 +22,16 @@ development:
   username: murakami
   password: well
 
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: murakami_test
+  pool: 5
+  username: murakami
+  password: well
+
+
+
 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
