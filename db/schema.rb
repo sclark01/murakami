@@ -57,4 +57,6 @@ ActiveRecord::Schema.define(version: 20150504195852) do
 
   add_index "replies", ["discussion_id"], name: "index_replies_on_discussion_id", using: :btree
 
+  add_foreign_key "comments", "articles", name: "comments_article_id_fk"
+
 end

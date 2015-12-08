@@ -33,7 +33,7 @@ group :doc do
 end
 
 gem 'rails_12factor', group: :production
-ruby "2.2.2"
+ruby "2.2.3"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'jquery-rails'
@@ -45,3 +45,4 @@ gem 'jquery-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'foreigner'
