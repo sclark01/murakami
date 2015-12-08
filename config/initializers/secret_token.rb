@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Murakami::Application.config.secret_key_base = 'e87a25f2c7d6d827cd79186b4a6c0b324c45ae649fbd32309603e0e31b9376b361ba031012a09f66bb7472b7768ae755512a6c18d88ff0d93cdc753364fb943a'
+Murakami::Application.config.secret_key_base = 'd82536dad32330530b9432b2eeb9e147ae0a968f83b09bfd42e091eae1b8cedf254ed89d1ed14769c6ba43061089056d01da30136146cd0ccf3216ee4537f259'
