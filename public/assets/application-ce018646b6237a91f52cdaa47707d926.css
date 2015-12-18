@@ -1,0 +1,544 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Open+Sans+Condensed:300,700);
+/* line 2, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #EAE5E2;
+}
+
+/* line 6, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+header {
+  background-color: #3A3436;
+  margin: 0;
+  border-bottom: 3px solid #46bbe2;
+}
+
+/* line 11, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 17, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.row.mt {
+  margin-top: 1.25em;
+}
+
+/* line 18, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.row.mb {
+  margin-bottom: 1.25em;
+}
+
+/* line 19, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.pad {
+  padding: 15px;
+}
+
+/* line 20, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.spad {
+  padding: 5px;
+}
+
+/* line 21, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.lpad {
+  padding: 20px;
+}
+
+/* line 22, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.ar {
+  text-align: right;
+}
+
+/* line 23, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.logo {
+  color: white;
+  font-size: 35px;
+  text-transform: lowercase;
+}
+
+/* line 28, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.logo span:first-child {
+  font-weight: 400;
+}
+
+/* line 31, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.logo span:last-child {
+  color: #b3b3b3;
+  font-weight: 300;
+}
+
+/* line 35, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+nav.menu a {
+  margin: 0 7px;
+  color: #b3b3b3;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* line 42, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+nav.menu a:last-child {
+  margin: 7px 0 7px 7px;
+}
+
+/* line 45, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+nav.menu a.current {
+  color: white;
+}
+
+/* line 48, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.top-msg {
+  border-bottom: 5px solid rgba(230, 230, 230, 0.3);
+  color: #666666;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* line 55, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.breadcrumb a {
+  transition: color .5s;
+}
+
+/* line 58, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.breadcrumb a:hover {
+  color: #333333;
+}
+
+/* line 61, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.breadcrumb a:after {
+  content: '\00a0\00a0\002F\00a0\00a0';
+  color: #b3b3b3;
+}
+
+/* line 65, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.breadcrumb a:last-child:after {
+  content: '\00a0\00a0\002F\00a0\00a0 now you\0027re here';
+  color: #b3b3b3;
+}
+
+/* line 69, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+a.primary {
+  color: #b3b3b3;
+  transition: color .5s;
+}
+
+/* line 73, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+a.primary:hover {
+  color: #46bbe2;
+}
+
+/* line 76, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+a.underline {
+  color: #b3b3b3;
+}
+
+/* line 79, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+a.underline:hover:after {
+  content: '';
+  display: block;
+  width: inherit;
+  height: 2px;
+  background-color: #46bbe2;
+  margin-bottom: -2px;
+  animation: link .9s ease;
+}
+
+@keyframes link {
+  /* line 89, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+  from {
+    width: 0;
+  }
+
+  /* line 90, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+  to {
+    width: 100%;
+  }
+}
+
+/* Topic */
+/* line 93, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.rounded {
+  overflow: hidden;
+}
+
+/* line 96, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.rounded.top {
+  border-radius: 4px 4px 0 0;
+}
+
+/* line 99, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.rounded.all {
+  border-radius: 4px;
+}
+
+/* line 102, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-category {
+  background-color: #46bbe2;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  text-shadow: 0 1px 1px #1c8bb0;
+}
+
+/* line 110, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-head > .column {
+  background-color: #16232d;
+  border-right: 1px solid #192534;
+  border-left: 1px solid #161e27;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  text-shadow: 0 1px 1px black;
+  text-align: center;
+}
+
+/* line 121, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-head > .column:first-child {
+  text-align: left;
+  border-left: none;
+}
+
+/* line 125, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-head > .column:last-child {
+  border-right: none;
+}
+
+/* line 128, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-topic > .column {
+  min-height: 71px;
+  background-color: whitesmoke;
+  border-bottom: 1px solid #e6e6e6;
+  color: gray;
+  font-size: 12px;
+}
+
+/* line 135, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-topic > .column:first-child {
+  color: #999999;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* line 140, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-topic > .column:nth-child(n+3) {
+  text-align: center;
+}
+
+/* line 143, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-topic > .column:last-child {
+  text-align: left;
+}
+
+/* line 146, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-topic a {
+  transition: color .5s;
+  color: #46bbe2;
+  font-weight: 600;
+}
+
+/* line 152, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-topic a:hover {
+  color: #21a7d4;
+}
+
+/* line 155, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-topic span {
+  display: block;
+  margin: 0 0 2px 0;
+}
+
+/* line 159, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.overflow-control {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 164, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-topic .column:nth-child(2) span.overflow-control {
+  width: 70%;
+  height: 15px;
+}
+
+/* line 168, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-topic span.center {
+  padding-top: 10px;
+}
+
+/* line 171, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.normal {
+  background-color: whitesmoke;
+  color: gray;
+  font-size: 12px;
+}
+
+/* line 177, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.normal h1.inset {
+  background-color: #16232d;
+  margin: -20px -20px 20px -20px;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* line 186, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.normal p {
+  margin: 0 0 40px 0;
+  line-height: 20px;
+}
+
+/* line 190, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.normal p:last-child {
+  margin: 0;
+}
+
+/* line 193, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#top-button {
+  display: none;
+  width: 27px;
+  background-color: #16232d;
+  position: fixed;
+  right: 60px;
+  bottom: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+/* line 207, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#top-button.show {
+  display: block;
+}
+
+/* line 211, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.logo,
+nav {
+  text-align: center;
+}
+
+/* line 214, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+nav.menu a {
+  margin: 7px;
+}
+
+/* line 223, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.breadcrumb,
+.forum-head > .column:nth-child(2),
+.forum-head > .column:nth-child(3),
+.forum-topic > .column:first-child,
+.forum-topic > .column:nth-child(3),
+.forum-topic > .column:nth-child(4),
+#top-button {
+  display: none;
+}
+
+/* line 231, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-category > span,
+.forum-category > .column:first-child,
+.forum-head > .column,
+.forum-topic > .column,
+.normal,
+.normal h1.inset {
+  font-size: 10px;
+  text-align: left;
+}
+
+/* line 235, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.forum-head > .column {
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+/* line 242, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.rounded,
+.rounded.top,
+.rounded.all {
+  border-radius: 0;
+}
+
+/* line 246, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.overflow-control > a,
+.overflow-control {
+  display: block;
+  width: 290px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 253, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.breadcrumb a:nth-child(2) {
+  margin: 3px 0 3px 10px;
+}
+
+/* line 254, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.breadcrumb a:nth-child(3) {
+  margin: 3px 0 3px 20px;
+}
+
+/* line 255, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.breadcrumb a:nth-child(4) {
+  margin: 3px 0 3px 30px;
+}
+
+/* line 256, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+.breadcrumb a:after {
+  display: none;
+}
+
+/* line 259, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#title {
+  font-size: 40px;
+}
+
+/* line 262, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#author {
+  font-size: 25px;
+}
+
+/* line 265, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#topic {
+  font-size: 20px;
+}
+
+/* line 268, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#desc {
+  font-size: 15px;
+}
+
+/* line 271, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#DiscDesc {
+  font-size: 12px;
+  padding: 10px 0px 0px 0px;
+}
+
+/* line 275, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#page {
+  padding: 10px 0px 0px 0px;
+}
+
+/* line 278, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+textarea {
+  height: 120px;
+  width: 400px;
+}
+
+/* line 282, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#user {
+  font-size: 10px;
+  padding: 10px 0px 0px 0px;
+}
+
+/* line 286, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+#bookTitle {
+  font-size: 15px;
+  padding: 10px 50px 0px 0px;
+}
+
+/* line 291, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+th {
+  padding: 0px 50px 0px 0px;
+}
+
+/* line 295, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/articles.css.scss */
+input[type="submit"] {
+  background-color: #46bbe2;
+  color: white;
+}
+/* line 1, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/sheaclark-tieche/Desktop/murakami/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
