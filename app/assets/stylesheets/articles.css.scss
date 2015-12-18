@@ -258,6 +258,7 @@ a.underline:hover:after {
   }
   #title {
   	font-size: 40px;
+    padding: 0 0 .8em 0;
   }
   #author {
   	font-size: 25px;
@@ -288,8 +289,12 @@ a.underline:hover:after {
     padding: 10px 50px 0px 0px;
   }
 
-  th{
-    padding: 0px 50px 0px 0px;
+  th {
+    padding: 0px 50px 30px 0px;
+  }
+
+  tr {
+    vertical-align: baseline;
   }
 
 input[type="submit"] {
