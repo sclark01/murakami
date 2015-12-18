@@ -2,8 +2,8 @@
 
 one:
   title: Book1Title
-  text: Author1
+  author: Author1
 
 two:
   title: Book2Title
-  text: Author2
+  author: Author2

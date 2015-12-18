@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  commenter: commenter1
-  body: his comment
+  name: commenter1
+  desc: his comment
   article_id: 
+  pageNum: 10
 
 two:
-  commenter: commenter2
-  body: her comment
+  name: commenter2
+  desc: her comment
   article_id: 
+  pageNum: 30

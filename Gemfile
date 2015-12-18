@@ -45,3 +45,7 @@ gem 'jquery-rails'
 gem 'foreigner'
 
 gem 'simplecov', :require => false, :group => :test
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
